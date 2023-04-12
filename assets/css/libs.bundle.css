@@ -17,7 +17,13 @@ url(../fonts/bootstrap-icons.woff) format("woff");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/*.test {background-color: #03045e}*/
+/*.test {background-color: #3a0ca3}*/
+/*.test {background-color: #003f88}*/
+/*.test {background-color: #034078}*/
+/*.test {background-color: #0d21a1}*/
+.test {background-color: #090c9b}
+/*.test {background-color: #03045e}*/
 .bi-alarm-fill::before { content: "\f101"; }
 .bi-alarm::before { content: "\f102"; }
 .bi-align-bottom::before { content: "\f103"; }
