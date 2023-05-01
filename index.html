@@ -5,31 +5,34 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" defer/>
 
     <!-- Main CSS-->
-    <link rel="stylesheet" href="./assets/css/index.bundle.css" />
+    <link rel="stylesheet" href="./assets/css/index.bundle.css" defer/>
+    <!-- javascript -->
+    <script src="./assets/js/vendor.bundle.js" defer></script>
+    <script src="./assets/js/index.bundle.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark  test bg-gradient py-1" aria-label="Fourth navbar example">
+    <nav class="navbar navbar-expand-md navbar-dark test bg-gradient py-1" aria-label="Fourth navbar example">
         <div class="container">
             <a class="navbar-brand col-4" href="index.html">Accueil</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse  d-md-flex justify-content-md-end" id="navbarsExample04">
-                <ul class="navbar-nav mt-0">
-                    <li class="nav-item">
+            <div class="collapse navbar-collapse  d-md-flex justify-content-md-end align-items-center" id="navbarsExample04">
+                <ul class="navbar-nav gap-md-3 mt-0">
+                    <li class="nav-item d-flex align-items-center">
                         <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex align-items-center">
                         <a class="nav-link" href="who_are_we.htm">qui sommes-nous ?</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex align-items-center">
                         <a class="nav-link border border-white rounded" href="">demander un devis gratuit</a>
                     </li>
                 </ul>
@@ -37,20 +40,23 @@
             </div>
         </div>
     </nav>
+    <!-- content body -->
     <div class="d-flex flex-column gap-10">
-    <!-- header -->
+        <!-- header with form -->
         <section class="overflow-hidden bg-black" data-aos="fade-in">
             <div class="d-flex flex-column py-20 container foreground min-vh-100">
                 <div class="row align-items-center justify-content-center justify-content-lg-between my-auto">
+                    <!-- Intro / infos -->
                     <div class="col-md-10 col-lg-6 col-xl-5 inverted mb-5 mb-lg-0 text-center text-lg-start">
-                        <h1 class="lh-sm text-white mb-4">Changement du super titre.</h1>
-                        <p class="lead text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laudantium
-                            ipsa
-                            reiciendis.
-                            Dignissimos
-                            veritatis unde doloribus quod soluta.</p>
+                        <h1 class="lh-sm text-white mb-4">Gironde Débarras</h1>
+                        <p class="lead text-secondary mb-4">
+                            Nous sommes une entreprise <b>spécialisée</b> dans le débarras de biens et de locaux de tous types. <br><br>
+                            Forts de <b>plus de 10 ans d'expérience</b>, nous offrons un service professionnel <b>irréprochable
+                            sur mesure.</b><br><br>
+                            <b>Contactez-nous dès maintenant pour obtenir un <b>devis gratuit</b> ou appellez nous !</b>
+                        </p>
                         <div class="d-inline-flex align-items-center mb-0">
-                            <span class="fs-2 me-2 lh-1 fw-bold">4.9</span>
+                            <span class="fs-2 me-2 lh-1 fw-bold">4.7</span>
                             <ul class="rating text-yellow me-3 fs-5">
                                 <li><i class="bi bi-star-fill"></i></li>
                                 <li><i class="bi bi-star-fill"></i></li>
@@ -59,43 +65,50 @@
                                 <li><i class="bi bi-star-fill"></i></li>
                             </ul>
                         </div>
-                        <small class="d-block text-muted">Based on 124 reviews.</small>
+                        <small class="d-block text-muted">Basé sur plus de 50 avis.</small>
                     </div>
+                    <!-- Formulaire -->
                     <div class="col-md-10 col-lg-6 col-xl-5" data-aos="fade-up">
                         <div class="card bg-opaque-black">
                             <div class="card-body bg-white">
                                 <form action="#" class="row g-2">
                                     <div class="col-lg-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="floatingInput-1" placeholder="Your Name">
-                                            <label for="floatingInput-1">Votre nom et prénom</label>
+                                            <input type="text" class="form-control" id="floatingInput-1" placeholder="Your Name" required>
+                                            <label for="floatingInput-1">Nom et prénom</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="floatingInput-2" placeholder="Your Location">
+                                            <input type="text" class="form-control" id="floatingInput-2" placeholder="Lieu" required>
                                             <label for="floatingInput-2">Lieu</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="floatingInput-3" placeholder="name@example.com">
-                                            <label for="floatingInput-3">Adresse emain</label>
+                                            <input type="email" class="form-control" id="floatingInput-3" placeholder="Adresse email" required>
+                                            <label for="floatingInput-3">Adresse email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="floatingInput-4" placeholder="Numéro de téléphone" required>
+                                            <label for="floatingInput-4">Numéro de téléphone</label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                      style="height: 100px"></textarea>
+                                            <textarea type="text" class="form-control" placeholder="Message" id="floatingTextarea2" style="height: 100px" required></textarea>
                                             <label for="floatingTextarea2">Message</label>
                                         </div>
                                     </div>
                                     <div class="d-grid ">
-                                        <a href="" class="btn btn-primary bg-gradient btn-lg">Get in touch</a>
+                                        <button type="submit" class="btn btn-primary bg-gradient btn-lg">
+                                            Devis gratuit !
+                                        </button>
                                     </div>
                                 </form>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -114,32 +127,62 @@
                 <div class="row">
                     <div class="col-4">
                         <div class="carousel carousel-visible carousel-steps">
-                            <div data-carousel='{"controls": false, "item" : 1, "nav": false, "loop" : false, "mouseDrag" : true, "gutter"
-                    : 40}'>
-                                <div>
-                                    <h4 class="fs-5">Studying</h4>
-                                    <p class="text-secondary fs-lg">Pariatur quia fugit porro autem numquam deserunt, minima aspernatur
-                                        laboriosam error culpa magni accusantium natus, alias a! Odit, doloremque.</p>
+                            <div data-carousel='{"controls": false, "item" : 1, "nav": false, "loop" : false, "mouseDrag" : true, "gutter": 40}'>
+                                <div class="">
+                                    <h4 class="fs-5">Contact</h4>
+                                    <p class="text-secondary fs-lg">
+                                        Suite à votre premier contact par téléphone ou par e-mail, notre expert en débarras se déplacera gratuitement sur les lieux pour évaluer le volume à débarrasser, le temps de travail, les difficultés éventuelles ainsi que les moyens matériels et humains à déployer.
+                                    </p>
+                                    <i class="bi bi-arrow-right-circle float-end pe-1"></i>
                                 </div>
                                 <div>
-                                    <h4 class="fs-5">Completing Tasks</h4>
-                                    <p class="text-secondary fs-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in? At
-                                        doloribus quas dolores excepturi?</p>
+                                    <h4 class="fs-5">Inventaire et valorisations</h4>
+                                    <p class="text-secondary fs-lg">
+                                        Notre expert en débarras effectuera un inventaire des valorisations possibles pour les objets, meubles, électroménagers, livres, vaisselle, etc. Il discutera avec vous des éléments que vous souhaitez conserver et vous expliquera les différentes solutions techniques et financières qui s'offrent à vous. Ensemble, vous déterminerez le délai d'intervention idéal pour votre débarras."
+                                    </p>
+                                    <i class="bi bi-arrow-right-circle float-end pe-1"></i>
                                 </div>
                                 <div>
-                                    <h4 class="fs-5">Lessons with Teacher</h4>
-                                    <p class="text-secondary fs-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in? At
-                                        doloribus quas dolores excepturi?</p>
+                                    <h4 class="fs-5">Réception du devis</h4>
+                                    <p class="text-secondary fs-lg">
+                                        Nous vous enverrons un devis détaillé par e-mail dans un délai de 48 heures, reprenant tous les éléments discutés lors de la visite sur place. Vous pouvez être assuré qu'il n'y aura pas de mauvaises surprises. En outre, nous vous offrons notre garantie Sérénité, qui comprend un devis ferme et définitif sans surprises, une garantie de ponctualité, une garantie de propreté et une garantie de tarif
+                                    </p>
+                                    <i class="bi bi-arrow-right-circle float-end pe-1"></i>
                                 </div>
                                 <div>
-                                    <h4 class="fs-5">Custom Project</h4>
-                                    <p class="text-secondary fs-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in? At
-                                        doloribus quas dolores excepturi?</p>
+                                    <h4 class="fs-5">Acceptation</h4>
+                                    <p class="text-secondary fs-lg">
+                                        Si le devis de débarras vous convient, nous convenons ensemble d'une date d'intervention ferme et définitive.
+                                    </p>
+                                    <i class="bi bi-arrow-right-circle float-end pe-1"></i>
                                 </div>
                                 <div>
-                                    <h4 class="fs-5">Finish</h4>
-                                    <p class="text-secondary fs-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in? At
-                                        doloribus quas dolores excepturi?</p>
+                                    <h4 class="fs-5">Début du débarras</h4>
+                                    <p class="text-secondary fs-lg">
+                                        Le jour de l'intervention pour le débarras de vos locaux, nous faisons le point sur toutes les valorisations discutées lors de la première visite, en accord avec le devis établi. C'est à ce moment-là que nos experts en débarras prennent en charge la mission. Les éléments valorisables sont triés et conditionnés pour leur seconde vie.
+                                    </p>
+                                    <i class="bi bi-arrow-right-circle float-end pe-1"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fs-5">Déroulé</h4>
+                                    <p class="text-secondary fs-lg">
+                                        Nous effectuons le tri des éléments du débarras conformément aux normes en vigueur, en organisant un tri par famille de matériaux. Une fois les phases 5 et 6 finalisées, notre équipe d'artisans débarrasseurs démonte le reste des éléments, les conditionne dans des sacs, des cartons ou des poubelles.
+                                    </p>
+                                    <i class="bi bi-arrow-right-circle float-end pe-1"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fs-5">Evacuation</h4>
+                                    <p class="text-secondary fs-lg">
+                                        La phase d'évacuation est la plus spectaculaire ! Tout le débarras est chargé dans nos camions, les pièces se vident à une vitesse incroyable. Les éléments destinés aux associations (vêtements, livres, ustensiles de cuisine, meubles, etc.) sont triés et mis à part pour être livrés à leurs destinataires. Notre équipe d'artisans débarrasseurs finalise le chantier en passant le balai et en démontant les lustres (si prévu dans le devis).
+                                    </p>
+                                    <i class="bi bi-arrow-right-circle float-end pe-1"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fs-5">Finalisation</h4>
+                                    <p class="text-secondary fs-lg">
+                                        Une fois le débarras terminé, notre équipe d'artisans débarrasseurs s'occupe du transport de tous les éléments vers leur nouvelle vie, ainsi que du déchargement d'une partie de ces derniers en centre de recyclage. Pour les éléments valorisables, c'est le début d'une nouvelle vie. Vous pouvez alors faire l'état des lieux et vérifier que tout est conforme au devis. Nous vous remettons ensuite la facture conforme au devis du débarras pour finaliser la prestation
+                                    </p>
+                                    <i class="bi bi-patch-check text-green float-end pe-1"></i>
                                 </div>
                             </div>
                         </div>
@@ -147,6 +190,33 @@
                 </div>
             </div>
         </section>
+        <!-- test carroussel -->
+        <section class="overflow-hidden">
+            <div class="container">
+                <div class="row mb-10">
+                    <div class="col-8">
+                        <h2>How it works?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="carousel carousel-visible carousel-steps">
+                            <div data-carousel='{"controls": false, "item" : 1, "nav": false, "loop" : false, "mouseDrag" : true, "gutter": 40}'>
+                                <div class="">
+                                    <h4 class="fs-6 fs-md-5">Contact</h4>
+                                    <p class="text-secondary fs-sm fs-md-lg">
+                                        Suite à votre premier contact par téléphone ou par e-mail, notre expert en débarras se déplacera gratuitement sur les lieux pour évaluer le volume à débarrasser, le temps de travail, les difficultés éventuelles ainsi que les moyens matériels et humains à déployer.
+                                    </p>
+                                    <i class="bi bi-arrow-right-circle float-end pe-1"></i>
+                                </div>
+                                <!-- ... -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- video -->
         <section class="bg-opaque-primary">
             <div class="container d-flex flex-column py-20">
@@ -317,12 +387,12 @@
         </section>
         <!-- footer -->
         <footer class="bg-light bg-gradient p-4">
-            <div class="container d-flex justify-content-between  align-items-center ">
+            <div class="container gap-5 d-flex flex-column flex-sm-row justify-content-between  align-items-center">
                 <a href="./index.html" class="">
                     <!-- TODO: change image -->
                     <img src="./assets/images/logo/logo-dark.svg" alt="Logo">
                 </a>
-                <ul class="list-unstyled d-flex gap-3">
+                <ul class="list-unstyled d-flex flex-column flex-lg-row gap-3 justify-content-between  align-items-center ">
                     <li class="mb-1"><a href="index.html" class="text-reset text-primary-hover">Accueil</a></li>
                     <li class="mb-1"><a href="who_are_we.htm" class="text-reset text-primary-hover">Qui sommes-nous ?</a></li>
                     <li class="mb-1"><a href="faq.html" class="text-reset text-primary-hover">Questions fréquentes</a></li>
@@ -332,8 +402,6 @@
         </footer>
     </div>
     </div>
-    <!-- javascript -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    <script src="./assets/js/index.bundle.js"></script>
+
 </body>
 </html>
