@@ -35,7 +35,7 @@
                         <a class="nav-link" href="who_are_we.htm">qui sommes-nous ?</a>
                     </li>
                     <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link border border-white rounded" href="">demander un devis gratuit</a>
+                        <a class="nav-link border border-white rounded" href="#quotation">demander un devis gratuit</a>
                     </li>
                 </ul>
 
@@ -45,12 +45,11 @@
     <!-- content body -->
     <div class="d-flex flex-column gap-10">
         <!-- header with form -->
-        <!-- TODO: add phone number + modify image bg -->
         <section class="overflow-hidden bg-black" data-aos="fade-in">
             <div class="d-flex flex-column py-20 container foreground min-vh-100" id="quotation">
                 <div class="row align-items-center justify-content-center justify-content-lg-between my-auto">
                     <!-- Intro / infos -->
-                    <div class="col-md-10 col-lg-6 col-xl-5 inverted mb-5 mb-lg-0 text-center text-lg-start">
+                    <div class="col-md-10 col-lg-6 col-xl-5 inverted mb-5 mb-lg-0 text-center text-lg-start" style="background: rgba(0, 0, 0, 0.2)" >
                         <h1 class="lh-sm text-white mb-4">Gironde Débarras</h1>
                         <p class="lead text-secondary mb-4">
                             Nous sommes une entreprise <b>spécialisée</b> dans le débarras de biens et de locaux de tous types. <br><br>
@@ -121,8 +120,12 @@
                     </div>
                 </div>
             </div>
-            <figure class="background background-overlay" style="background-image: url('./assets/images/service-1.jpg')"
-                    data-top-top="transform: scale(1);" data-top-bottom="transform: scale(1.1);"></figure>
+            <!-- TODO: CHANGE BG IMAGES HERE -->
+            <figure
+                    class="background background-overlay"
+                    style="background-image: url('./assets/images/camion.png')"
+                    data-top-top="transform: scale(1);"
+                    data-top-bottom="transform: scale(1.1);"></figure>
         </section>
         <!-- accodion DONE -->
         <section class="py-15 py-xl-20">
@@ -282,7 +285,6 @@
             </div>
         </section>
         <!-- video -->
-        <!-- TODO: Modify image -->
         <section class="bg-opaque-primary">
             <div class="container d-flex flex-column py-20">
                 <div class="row align-items-center justify-content-center justify-content-lg-between mt-lg-10">
@@ -295,7 +297,7 @@
                             Notre entreprise de débarras de maison, appartement, cave, grenier et locaux s’engage à offrir à ses clients une garantie 0 surprises !! <br>
                             Nous sommes conscients que les travaux de débarras peuvent être stressants et que les clients ont besoin d’une tranquillité d’esprit absolue quant aux coûts et au déroulement du travail.
                         </p>
-                        <a href="#quotation" class="btn btn-primary btn-with-icon rounded-pill btn-lg">Demander un devis <i
+                        <a href="#quotation" class="btn btn-primary btn-with-icon rounded-pill btn-lg">Demander un devis gratuit <i
                                 class="bi bi-arrow-right"></i></a>
 
                     </div>
@@ -304,9 +306,10 @@
             <div class="container-fluid back back-static">
                 <div class="row justify-content-end h-100">
                     <div class="col-lg-6 overflow-hidden position-relative" data-aos="fade-in">
-                        <figure class="media media-video" data-bp='{"ytSrc": "RDRspwAXDQI"}'>
-                    <span style="background-image: url('./assets/images/small-2.jpg')">
-                    </span>
+                        <figure
+                                class="media media-video"
+                                data-bp='{"ytSrc": "RDRspwAXDQI"}'>
+                            <span style="background-image: url('./assets/images/DEBARRAS.png')"></span>
                         </figure>
                     </div>
                 </div>
@@ -387,6 +390,11 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
+                        <div class="text-center pb-4">
+                            <a href="#quotation" class="btn btn-primary btn-with-icon rounded-pill btn-lg">
+                                Demander un devis gratuit<i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
                         <div class="row justify-content-center mb-5">
                             <div class="col-lg-8 text-center">
                                 <span class="eyebrow mb-2 text-secondary">💙 Ce sont nos clients qui parlent le mieux de nous 💙</span>
