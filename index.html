@@ -13,6 +13,7 @@
     <!-- javascript -->
     <script src="./assets/js/vendor.bundle.js" defer></script>
     <script src="./assets/js/index.bundle.js" defer></script>
+    <script src="./assets/js/service.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -105,13 +106,15 @@
                                     </div>
                                     <div class="d-grid ">
                                         <button type="submit" class="btn btn-primary bg-gradient btn-lg">
-                                            Devis gratuit !
+                                            Recevoir mon devis gratuit <br>💌
                                         </button>
                                     </div>
-                                    <div  class="btn btn-primary bg-gradient btn-lg my-5">
-                                        Numéro de téléphone
-                                    </div>
                                 </form>
+                                <div  id="phone_number"
+                                      class="btn btn-primary bg-gradient btn-lg my-5 col-12"
+                                      onclick="showPhoneNumber()">
+                                    Afficher le numéro <br> 📞
+                                </div>
                             </div>
                         </div>
                     </div>
