@@ -9,9 +9,9 @@
           content="Gironde Débarras accueil: entreprise spécialisée dans le débarras de locaux et de biens. Demandez un devis gratuit en ligne pour bénéficier d'un service clé en main rapide et efficace. Découvrez comment fonctionne notre service de débarras à travers une vidéo explicative. Comprenez pourquoi il est important de choisir une entreprise qualifiée et expérimentée. Consultez nos chiffres clés et avis clients pour en savoir plus. Contactez-nous dès maintenant pour un débarras réussi">
     <meta name="robots" content="index, follow">
     <!-- Main CSS-->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" defer/>
-    <link rel="stylesheet" href="./assets/css/index.bundle.css" defer/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" onload="this.rel='stylesheet'" defer />
+    <link rel="stylesheet" href="./assets/css/index.bundle.css" onload="this.rel='stylesheet'" defer/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" onload="this.rel='stylesheet'" defer>
     <!-- javascript -->
     <script src="./assets/js/vendor.bundle.js" defer></script>
     <script src="./assets/js/index.bundle.js" defer></script>
@@ -150,9 +150,9 @@
             <figure
                     aria-label="Image des véhicules de la société"
                     class="background background-overlay"
-                    style="background-image: url('./assets/images/camion.png')"
+                    style="background-image: url('./assets/images/camion.webp')"
                     data-top-top="transform: scale(1);"
-                    data-top-bottom="transform: scale(1.1);"></figure>
+                    data-top-bottom="transform: scale(1.1);" loading="lazy"></figure>
         </section>
         <!-- accodion -->
         <section class="py-15 py-xl-20">
