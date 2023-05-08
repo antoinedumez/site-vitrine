@@ -5,487 +5,458 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./assets/css/index.bundle.css" />
-    <title>FAQ</title>
+    <meta name="description"
+          content="Gironde Débarras FAQ : mettez fin à vos interrogations grâce à notre page FAQ. Retrouvez une liste de questions fréquentes sur notre entreprise de débarras ainsi que leurs réponses détaillées. Contactez-nous pour toute autre question ou pour demander un devis gratuit.">
+    <meta name="robots" content="index, follow">
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" defer/>
+    <link rel="stylesheet" href="./assets/css/index.bundle.css" defer/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- javascript -->
+    <script src="./assets/js/vendor.bundle.js" defer></script>
+    <script src="./assets/js/index.bundle.js" defer></script>
+    <script src="./assets/js/service.js" defer></script>
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/logo/gironde_debarras_logo_01.png" type="image/png">
+    <!-- site map -->
+    <link rel="sitemap" type="application/xml" href="./sitemap.xml">
+    <title>FAQ - Gironde Débarras</title>
 </head>
-
 <body>
-<!-- navbar -->
-<nav class="navbar navbar-expand-md navbar-dark  test bg-gradient py-1" aria-label="Fourth navbar example">
-    <div class="container">
-        <a class="navbar-brand col-4" href="index.html">Accueil</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- navbar -->
+    <header class="navbar navbar-expand-md navbar-dark test bg-gradient py-1" aria-label="Fourth navbar example">
+        <nav class="container">
+            <a class="navbar-brand col-4"
+               href="index.html"
+               title="Gironde Débarras - Accueil">
+                <b>Gironde Débarras - Accueil</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse  d-md-flex justify-content-md-end" id="navbarsExample04">
-            <ul class="navbar-nav mt-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="who_are_we.htm">qui sommes-nous ?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link border border-white rounded" href="">demander un devis gratuit</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse  d-md-flex justify-content-md-end align-items-center" id="navbarsExample04">
+                <ul class="navbar-nav gap-md-3 mt-0">
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link active"
+                           aria-current="page"
+                           href="faq.html"
+                           title="Foire aux questions">
+                            <b>FAQ</b>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link"
+                           href="who_are_we.htm"
+                           title="En savoir plus sur Gironde Débarras">
+                            <b>Qui sommes-nous ?</b>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link border border-black rounded bg-white text-black px-1"
+                           href="/site_vitrine/index.html#quotation"
+                           title="Demander un devis gratuit pour votre débarras">
+                            <b>Demander un devis gratuit</b>
+                        </a>
+                    </li>
+                </ul>
 
-        </div>
-    </div>
-</nav>
-<!-- header -->
-<section class="overflow-hidden bg-black" data-aos="fade-in">
-    <div class="d-flex flex-column py-20 container foreground min-vh-100">
-        <div class="row align-items-center justify-content-center justify-content-lg-between my-auto">
-            <div class="col-md-10 col-lg-6 col-xl-5 inverted mb-5 mb-lg-0 text-center text-lg-start">
-                <h1 class="lh-sm text-white mb-4">Changement du super titre.</h1>
-                <p class="lead text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laudantium
-                    ipsa
-                    reiciendis.
-                    Dignissimos
-                    veritatis unde doloribus quod soluta.</p>
-                <div class="d-inline-flex align-items-center mb-0">
-                    <span class="fs-2 me-2 lh-1 fw-bold">4.9</span>
-                    <ul class="rating text-yellow me-3 fs-5">
-                        <li><i class="bi bi-star-fill"></i></li>
-                        <li><i class="bi bi-star-fill"></i></li>
-                        <li><i class="bi bi-star-fill"></i></li>
-                        <li><i class="bi bi-star-fill"></i></li>
-                        <li><i class="bi bi-star-fill"></i></li>
-                    </ul>
-                </div>
-                <small class="d-block text-muted">Based on 124 reviews.</small>
             </div>
-            <div class="col-md-10 col-lg-6 col-xl-5" data-aos="fade-up">
-                <div class="card bg-opaque-black">
-                    <div class="card-body bg-white">
-                        <form action="#" class="row g-2">
-                            <div class="col-lg-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="floatingInput-1" placeholder="Your Name">
-                                    <label for="floatingInput-1">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="floatingInput-2" placeholder="Your Location">
-                                    <label for="floatingInput-2">Your Location</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="floatingInput-3" placeholder="name@example.com">
-                                    <label for="floatingInput-3">Email address</label>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                              style="height: 100px"></textarea>
-                                    <label for="floatingTextarea2">Message</label>
-                                </div>
-                            </div>
-                            <div class="d-grid">
-                                <a href="" class="btn btn-green btn-lg">Get in touch</a>
-                            </div>
-                        </form>
+        </nav>
+    </header>
+    <main>
+        <!-- faq block -->
+        <section class="bg-light py-15 py-xl-20" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold">Voici les réponses aux questions les plus fréquentes !</h2>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <figure class="background background-overlay" style="background-image: url('./assets/images/service-1.jpg')"
-            data-top-top="transform: scale(1);" data-top-bottom="transform: scale(1.1);"></figure>
-</section>
-
-<!-- faq block -->
-<section class="bg-light py-15 py-xl-20">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 text-center">
-                <h2 class="fw-bold">What will you learn?</h2>
-            </div>
-        </div>
-        <div class="row g-3 g-xl-5">
-            <div class="col-lg-6">
-                <div class="card bg-opaque-white" data-aos="fade-up">
-                    <div class="card-body bg-white">
-                        <h3 class="fs-4 my-3">Introduction</h3>
-                        <div class="accordion" id="accordion-1">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-1-1">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
-                                        Welcome to the course
-                                    </button>
-                                </h2>
-                                <div id="collapse-1-1" class="accordion-collapse collapse" aria-labelledby="heading-1-1"
-                                     data-bs-parent="#accordion-1">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Yes. The gulp workflow can
-                                            be
-                                            bypassed all together if you prefer to simply edit the static HTML and CSS files.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-1-2">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
-                                        Getting Started
-                                    </button>
-                                </h2>
-                                <div id="collapse-1-2" class="accordion-collapse collapse" aria-labelledby="heading-1-2"
-                                     data-bs-parent="#accordion-1">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-                                            voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
-                                            assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <ul class="list-inline list-inline-separated text-secondary eyebrow">
-                            <li class="list-inline-item">2 Lessons</li>
-                            <li class="list-inline-item">3.3 Hours</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card bg-opaque-white mt-3 mt-xl-5" data-aos="fade-up">
-                    <div class="card-body bg-white">
-                        <h3 class="fs-4 my-3">Color</h3>
-                        <div class="accordion" id="accordion-3">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-3-1">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-3-1" aria-expanded="false" aria-controls="collapse-3-1">
-                                        Working with color
-                                    </button>
-                                </h2>
-                                <div id="collapse-3-1" class="accordion-collapse collapse" aria-labelledby="heading-3-1"
-                                     data-bs-parent="#accordion-3">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Yes. The gulp workflow can
-                                            be
-                                            bypassed all together if you prefer to simply edit the static HTML and CSS files.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-3-2">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-3-2" aria-expanded="false" aria-controls="collapse-3-2">
-                                        How to use the gradient tool in Illustrator
-                                    </button>
-                                </h2>
-                                <div id="collapse-3-2" class="accordion-collapse collapse" aria-labelledby="heading-3-2"
-                                     data-bs-parent="#accordion-3">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-                                            voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
-                                            assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-3-3">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-3-3" aria-expanded="false" aria-controls="collapse-3-3">
-                                        How to use the pen tool in Illustrator
-                                    </button>
-                                </h2>
-                                <div id="collapse-3-3" class="accordion-collapse collapse" aria-labelledby="heading-3-3"
-                                     data-bs-parent="#accordion-3">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-                                            voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
-                                            assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <ul class="list-inline list-inline-separated text-secondary eyebrow">
-                            <li class="list-inline-item">2 Lessons</li>
-                            <li class="list-inline-item">3.3 Hours</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card bg-opaque-white" data-aos="fade-up">
-                    <div class="card-body bg-white">
-                        <h3 class="fs-4 my-3">How to Draw in Illustrator</h3>
-                        <div class="accordion" id="accordion-2">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-2-1">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-2-1" aria-expanded="false" aria-controls="collapse-2-1">
-                                        Setting up our document
-                                    </button>
-                                </h2>
-                                <div id="collapse-2-1" class="accordion-collapse collapse" aria-labelledby="heading-2-1"
-                                     data-bs-parent="#accordion-2">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Yes. The gulp workflow can
-                                            be
-                                            bypassed all together if you prefer to simply edit the static HTML and CSS files.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-2-2">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-2-2" aria-expanded="false" aria-controls="collapse-2-2">
-                                        Drawing ith shapes and lines
-                                    </button>
-                                </h2>
-                                <div id="collapse-2-2" class="accordion-collapse collapse" aria-labelledby="heading-2-2"
-                                     data-bs-parent="#accordion-2">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-                                            voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
-                                            assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-2-3">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-2-3" aria-expanded="false" aria-controls="collapse-2-3">
-                                        Grouping and arranging
-                                    </button>
-                                </h2>
-                                <div id="collapse-2-3" class="accordion-collapse collapse" aria-labelledby="heading-2-3"
-                                     data-bs-parent="#accordion-2">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-                                            voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
-                                            assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-2-4">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-2-4" aria-expanded="false" aria-controls="collapse-2-4">
-                                        Drawing with shape builder tool
-                                    </button>
-                                </h2>
-                                <div id="collapse-2-4" class="accordion-collapse collapse" aria-labelledby="heading-2-4"
-                                     data-bs-parent="#accordion-2">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-                                            voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
-                                            assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <ul class="list-inline list-inline-separated text-secondary eyebrow">
-                            <li class="list-inline-item">2 Lessons</li>
-                            <li class="list-inline-item">3.3 Hours</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card bg-opaque-white mt-3 mt-xl-5" data-aos="fade-up">
-                    <div class="card-body bg-white">
-                        <h3 class="fs-4 my-3">Sketching</h3>
-                        <div class="accordion" id="accordion-4">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-4-1">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-4-1" aria-expanded="false" aria-controls="collapse-4-1">
-                                        Can I use static HTML files ?
-                                    </button>
-                                </h2>
-                                <div id="collapse-4-1" class="accordion-collapse collapse" aria-labelledby="heading-4-1"
-                                     data-bs-parent="#accordion-4">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Yes. The gulp workflow can
-                                            be
-                                            bypassed all together if you prefer to simply edit the static HTML and CSS files.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-4-2">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-4-2" aria-expanded="false" aria-controls="collapse-4-2">
-                                        Grids &amp; Layout
-                                    </button>
-                                </h2>
-                                <div id="collapse-4-2" class="accordion-collapse collapse" aria-labelledby="heading-4-2"
-                                     data-bs-parent="#accordion-4">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-                                            voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
-                                            assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-4-3">
-                                    <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-4-3" aria-expanded="false" aria-controls="collapse-4-3">
-                                        Grids &amp; Layout
-                                    </button>
-                                </h2>
-                                <div id="collapse-4-3" class="accordion-collapse collapse" aria-labelledby="heading-4-3"
-                                     data-bs-parent="#accordion-4">
-                                    <div class="accordion-body">
-                                        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-                                            voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
-                                            assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <ul class="list-inline list-inline-separated text-secondary eyebrow">
-                            <li class="list-inline-item">2 Lessons</li>
-                            <li class="list-inline-item">3.3 Hours</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- reviews -->
-<section class="py-20">
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center">
-                        <span class="eyebrow mb-2 text-secondary">Customers love us</span>
-                        <h2 class="fw-bold">Some words from our 1400+ customers.</h2>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col">
-                        <ul class="list-unstyled border-bottom">
-                            <li class="border-top py-5">
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <div class="col-md-4 mb-4 mb-md-0">
-                                        <div class="d-flex align-items-end mb-1">
-                                            <span class="fs-3 fw-bold lh-1 mb-0 me-1">5.0</span>
-                                            <span class="text-muted">out of 5</span>
+                <div class="row g-3 g-xl-5">
+                    <!-- left column -->
+                    <div class="col-lg-6">
+                        <div class="card bg-opaque-white" data-aos="fade-up">
+                            <div class="card-body bg-white">
+                                <h3 class="fs-4 my-3">Questions générales</h3>
+                                <div class="accordion" id="accordion-1">
+                                    <!-- question 1 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-1-5">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-1-5" aria-expanded="false" aria-controls="collapse-1-5">
+                                                Qu’est ce qu’un débarras ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-1-5" class="accordion-collapse collapse" aria-labelledby="heading-1-5"
+                                             data-bs-parent="#accordion-1">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    Le débarras (de maison, cave, grennier ou tout autre locaux) consiste à vider et nettoyer un lieu de tous les objets superflus ou inutilisés tels que des meubles, des appareils électroménagers, des vêtements, des livres, des jouets, des outils, des équipements de sport et autres.<br>
+                                                    Il permet de libérer de l'espace pour une utilisation plus efficace et de donner une seconde vie aux objets encore en bon état. <br>
+                                                    Gironde Débarras est une entreprise spécialisée dans ce domaine et peut réaliser le débarras de n'importe quel lieu.
+                                                </p>
+                                            </div>
                                         </div>
-                                        <ul class="rating text-yellow">
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                        </ul>
+
                                     </div>
-                                    <div class="col-md-8">
-                                        <p class="mb-2 lead text-secondary">“Lorem, ipsum dolor sit, amet <span
-                                                class="text-black">consectetur adipisicing</span> elit. Modi ullam in
-                                            distinctio placeat,
-                                            repellendus similique quod illo alias enim, asperiores veritatis, repudiandae.”</p>
-                                        <span class="eyebrow">Michael Doe</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="border-top py-5">
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <div class="col-md-4 mb-4 mb-md-0">
-                                        <div class="d-flex align-items-end mb-1">
-                                            <span class="fs-3 fw-bold lh-1 mb-0 me-1">5.0</span>
-                                            <span class="text-muted">out of 5</span>
+                                    <!-- question 2 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-1-3">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
+                                                Comment choisir une entreprise de débarras ?                                    </button>
+                                        </h2>
+                                        <div id="collapse-1-3" class="accordion-collapse collapse" aria-labelledby="heading-1-3"
+                                             data-bs-parent="#accordion-1">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    Lorsque vous cherchez une entreprise de débarras, plusieurs facteurs doivent être pris en compte.<br>
+                                                    Tout d'abord, assurez-vous que l'entreprise est légitime et possède une licence valide ainsi qu'une assurance appropriée. Ensuite, n'hésitez pas à demander des références et des avis de clients antérieurs pour vous assurer de la bonne réputation de l'entreprise. <br>
+                                                    Il est également important de discuter des différentes options de débarras et des coûts pour trouver un service qui convient à vos besoins et à votre budget.<br>
+                                                    Vérifiez également que l'entreprise dispose de moyens de transport adaptés pour le débarras des objets encombrants et qu'elle a une politique de traitement des déchets écologiques et responsables.<br>
+                                                    Enfin, si possible, choisissez une entreprise près de votre emplacement pour éviter les coûts de déplacement importants.
+                                                </p>
+                                            </div>
                                         </div>
-                                        <ul class="rating text-yellow">
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                        </ul>
                                     </div>
-                                    <div class="col-md-8">
-                                        <p class="mb-2 lead text-secondary">“Lorem, ipsum dolor sit, amet <span
-                                                class="text-black">consectetur adipisicing</span> elit. Modi ullam in
-                                            distinctio placeat,
-                                            repellendus similique quod illo alias enim, asperiores veritatis, repudiandae.”</p>
-                                        <span class="eyebrow">Michael Doe</span>
+                                    <!-- question 3 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-1-1">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
+                                                Quel est le prix au M3 d’un débarras ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-1-1" class="accordion-collapse collapse" aria-labelledby="heading-1-1"
+                                             data-bs-parent="#accordion-1">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    Le coût d'un débarras dépend de divers facteurs tels que la localisation, le type et la quantité de déchets à évacuer ainsi que le type de service demandé (débarras complet, tri sélectif, etc...). <br>
+                                                    Il est difficile de donner un prix exact sans avoir toutes les informations nécessaires.<br>
+                                                    Pour avoir une idée des coûts, il est recommandé de demander un devis de débarras auprès de Gironde Débarras.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- question 4 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-1-7">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-1-7" aria-expanded="false" aria-controls="collapse-1-7">
+                                                Qu’est ce qu’un inventaire ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-1-7" class="accordion-collapse collapse" aria-labelledby="heading-1-7"
+                                             data-bs-parent="#accordion-1">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    Un inventaire mobilier est une liste détaillée des meubles et équipements mobiliers présents dans une propriété privée. Il peut inclure des informations telles que la description, la quantité, la date d'achat, la valeur etc...<br>
+                                                    Cet inventaire est utile pour définir la valorisation des éléments à débarrasser.<br>
+                                                    D'autre part, un inventaire par commissaire-priseur est un processus par lequel un expert en évaluation d'objets d'art, de bijoux et d'autres biens de valeur évalue et répertorie les biens d'une succession.<br>
+                                                    Ce processus permet aux héritiers ou bénéficiaires de connaître la valeur des biens et de les distribuer équitablement.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- question 5 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-1-6">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-1-6" aria-expanded="false" aria-controls="collapse-1-6">
+                                                Combien de temps dure un débarras ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-1-6" class="accordion-collapse collapse" aria-labelledby="heading-1-6"
+                                             data-bs-parent="#accordion-1">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    Il est compliqué de donner une estimation précise pour la durée nécessaire au débarras d'une maison car cela dépend de plusieurs facteurs, tels que la taille du lieu et de la quantité de biens à enlever.<br>
+                                                    C'est pour cette raison que Gironde Débarras doit se déplacer gratuitement pour évaluer l'étendue du travail à effectuer. <br>
+                                                    Il est recommandé de planifier à l'avance et de commencer le processus de débarras le plus tôt possible afin de minimiser les délais.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- question 6 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-1-4">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-1-4" aria-expanded="false" aria-controls="collapse-1-4">
+                                                Pourquoi débarrasser un appartement ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-1-4" class="accordion-collapse collapse" aria-labelledby="heading-1-4"
+                                             data-bs-parent="#accordion-1">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    Le débarras consiste à retirer tous les objets inutiles ou non utilisés de l'espace.<br>
+                                                    Il peut être effectué pour diverses raisons, telles que la vente, la location ou simplement pour désencombrer l'espace.
+                                                    Gironde Débarras, une entreprise spécialisée dans les débarras, peut effectuer ce service. De plus, nous offrons également des services de tri et de recyclage pour les objets récupérés.<br>
+                                                    Afin de préparer un bien pour une vente ou de la location, il est recommandé de contacter les Gironde Débarras pour évaluer le travail à faire et planifier le débarras dès que possible pour minimiser les délais.
+                                                </p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- question 7 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-1-8">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-1-8" aria-expanded="false" aria-controls="collapse-1-8">
+                                                Videz-vous les meubles et armoires ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-1-8" class="accordion-collapse collapse" aria-labelledby="heading-1-8"
+                                             data-bs-parent="#accordion-1">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    Le débarras des armoires et des placards est une opération qui peut être réalisée de différentes manières en fonction des besoins du client.<br>
+                                                    Les étapes générales pour un débarras efficace comprennent le triage, le nettoyage, le retrait et le traitement des articles. Les articles encore utilisables peuvent être donnés, vendus ou stockés, tandis que les articles endommagés ou non utilisables doivent être jetés.<br>
+                                                    Les armoires et les placards doivent ensuite être vidés et nettoyés de leur contenu, démontés si nécessaire, puis retirés de la pièce.<br>
+                                                    Il est important de noter que chaque ARTISAN DÉBARRASSEUR peut avoir ses propres étapes et services proposés, il est donc important de se renseigner auprès de l'entreprise avant de commencer un débarras.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- write column -->
+                    <div class="col-lg-6">
+                        <!-- first block -->
+                        <div class="card bg-opaque-white" data-aos="fade-up">
+                            <div class="card-body bg-white">
+                                <h3 class="fs-4 my-3">
+                                    La valorisation et le recyclage
+                                </h3>
+                                <div class="accordion" id="accordion-2">
+                                    <!-- question 1 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-2-1">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-2-1" aria-expanded="false" aria-controls="collapse-2-1">
+                                                Qu’est ce que la valorisation ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-2-1" class="accordion-collapse collapse" aria-labelledby="heading-2-1"
+                                             data-bs-parent="#accordion-2">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    La valorisation d'objets ou de mobilier consiste à estimer leur valeur en prenant en compte leur histoire, leur authenticité, leur condition et la demande sur le marché.<br>
+                                                    Cette pratique concerne différents types d'objets tels que des meubles anciens, des œuvres d'art, des bijoux, des antiquités, des vêtements de créateur, des instruments de musique, et bien plus encore.<br>
+                                                    Les experts en valorisation utilisent leur expertise pour évaluer la valeur d'un objet en prenant en compte son origine, sa fabrication et les ventes précédentes d'objets similaires. Pour ce faire, ils peuvent se baser sur des guides de valeurs, des ventes aux enchères et des archives de ventes pour déterminer une estimation de la valeur d'un objet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- question 2 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-2-2">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-2-2" aria-expanded="false" aria-controls="collapse-2-2">
+                                                Recyclez vous les éléments du débarras ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-2-2" class="accordion-collapse collapse" aria-labelledby="heading-2-2"
+                                             data-bs-parent="#accordion-2">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    Le recyclage consiste à collecter, trier, traiter et transformer les matières recyclables en nouveaux produits.<br>
+                                                    Le tri sélectif, quant à lui, est une méthode de collecte qui sépare les différents types de déchets tels que le papier, le verre, le métal, le plastique et les déchets organiques, afin de faciliter leur recyclage. Cette pratique permet de réduire la quantité de déchets enfouis dans les décharges et de préserver les ressources naturelles en réutilisant les matières recyclables.<br>
+                                                    Chez Gironde Débarras, nous sommes engagés dans une démarche écologique de recyclage et de tri sélectif, qui vise à limiter l'impact environnemental des déchets.<br>
+                                                    Cette démarche inclut plusieurs étapes clés, telles que la collecte séparée des déchets, le tri des déchets pour éliminer les matières non recyclables et séparer les différents types de matières recyclables.<br>
+                                                    Cette approche nous permet de réduire les impacts environnementaux et de préserver les ressources naturelles.<br>
+                                                    Elle permet également de diminuer les coûts liés à la gestion des déchets et de contribuer à une économie circulaire.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- question 3 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-2-3">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-2-3" aria-expanded="false" aria-controls="collapse-2-3">
+                                                Qu'est-ce que des encombrants ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-2-3" class="accordion-collapse collapse" aria-labelledby="heading-2-3"
+                                             data-bs-parent="#accordion-2">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    Les encombrants sont des objets volumineux tels que des meubles, des électroménagers, des matériaux de construction etc... qui ne peuvent être jetés avec les ordures ménagères classiques et qui nécessitent une collecte spéciale.<br>
+                                                    Gironde Débarras est un experts en la matière et propose des services de collecte et de débarras pour ces types d'objets.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- second block -->
+                        <div class="card bg-opaque-white mt-3 mt-xl-5" data-aos="fade-up">
+                            <div class="card-body bg-white">
+                                <h3 class="fs-4 my-3">Les démarches administratives</h3>
+                                <div class="accordion" id="accordion-4">
+                                    <!-- question 1 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-4-1">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-4-1" aria-expanded="false" aria-controls="collapse-4-1">
+                                                Le devis est il gratuit ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-4-1" class="accordion-collapse collapse" aria-labelledby="heading-4-1"
+                                             data-bs-parent="#accordion-4">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    Gironde Débarras ne fait que des devis gratuits et se déplace gratuitement pour que ce dernier soit le plus précis possible et qu'il n'y ait aucune mauvaise surprise.<br>
+                                                    Un devis gratuit est une estimation écrite des coûts pour un projet ou d'un service spécifique.<br>
+                                                    Ce document est généralement fourni par une entreprise ou un professionnel à un client potentiel sans aucun frais ni engagement de la part du client.<br>
+                                                    Les devis gratuits permettent aux clients de comparer les coûts et les options avant de prendre une décision d’achat ou de contracter un service.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- question 2 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-4-2">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-4-2" aria-expanded="false" aria-controls="collapse-4-2">
+                                                En cas de succession ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-4-2" class="accordion-collapse collapse" aria-labelledby="heading-4-2"
+                                             data-bs-parent="#accordion-4">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    En cas de succession, Gironde Débarras vous accompagne dans le respect et propose un service de paiement par le notaire afin que vous n'ayez pas à avancer de frais et que vous puissiez vous concentrer sur ce qui est important pour vous.<br>
+                                                    Une succession est la procédure juridique par laquelle les biens d'une personne décédée sont transmis à ses héritiers ou à ses ayants droit.<br>
+                                                    Elle peut être ouverte par le biais d'un testament ou, à défaut, par la loi (succession légale). <br>
+                                                    Les étapes de la succession peuvent inclure la répartition des biens, le règlement des dettes et la liquidation de la succession. <br>
+                                                    Ce processus est généralement supervisé par un juge ou un administrateur de la succession et peut nécessiter l'aide d'un notaire ou d'un avocat.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- question 3 -->
+                                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <h2 class="accordion-header" id="heading-4-3">
+                                            <button class="accordion-button lead collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-4-3" aria-expanded="false" aria-controls="collapse-4-3">
+                                                Peut-on évitez d'avancer les frais de débarras grâce au notaire ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-4-3" class="accordion-collapse collapse" aria-labelledby="heading-4-3"
+                                             data-bs-parent="#accordion-4">
+                                            <div class="accordion-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                                <p class="text-secondary">
+                                                    <b>Oui</b><br>
+                                                    Le notaire joue un rôle clé dans la vente d'une propriété en collectant et distribuant les fonds. Dans ce processus, il est également responsable de la collecte des fonds de l'acheteur pour le paiement de Gironde Débarras, évitant ainsi toute avance de trésorerie de la part du vendeur.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- footer -->
-<footer class="py-15 py-xl-20">
-    <div class="container">
-        <div class="row g-4 g-lg-5 mb-10">
-            <div class="col-md-3 text-center text-md-start">
-                <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
+        </section>
+        <!-- reviews -->
+        <section class="">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-lg-8 text-center">
+                                <span class="eyebrow mb-2 text-secondary">💙 Ce sont nos clients qui parlent le mieux de nous 💙</span>
+                                <h2 class="fw-bold">Quelques messages de nos clients</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-unstyled border-bottom">
+                                    <li class="border-top py-5">
+                                        <div class="d-flex flex-wrap justify-content-between">
+                                            <div class="col-md-4 mb-4 mb-md-0">
+                                                <div class="d-flex align-items-end mb-1">
+                                                    <span class="fs-3 fw-bold lh-1 mb-0 me-1">5.0</span>
+                                                    <span class="text-muted">sur 5</span>
+                                                </div>
+                                                <ul class="rating text-yellow">
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <blockquote class="mb-2 lead text-secondary">
+                                                    “J'ai été ravi du travail réalisé par Gironde Débarras suite suite à une succession familial. Leur professionnalisme m'a rassuré dès le début et le résultat correspondait parfaitement à mes attentes. Je recommande vivement leurs services”
+                                                </blockquote>
+                                                <cite class="eyebrow">Murielle</cite>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="border-top py-5">
+                                        <div class="d-flex flex-wrap justify-content-between">
+                                            <div class="col-md-4 mb-4 mb-md-0">
+                                                <div class="d-flex align-items-end mb-1">
+                                                    <span class="fs-3 fw-bold lh-1 mb-0 me-1">4.7</span>
+                                                    <span class="text-muted">sur 5</span>
+                                                </div>
+                                                <ul class="rating text-yellow">
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <blockquote class="mb-2 lead text-secondary">
+                                                    “Les Artisans Débarrasseurs ont été incroyablement professionnels lors de mon débarras. Ils ont travaillé rapidement et efficacement tout en étant très respectueux de mes biens. Le résultat final correspondait parfaitement au devis et à mes attentes. Aucune mauvaise surprise par rapport au devis, je les recommande chaudement !”
+                                                </blockquote>
+                                                <cite class="eyebrow">Michael</cite>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-center py-4">
+                            <a href="/site_vitrine/index.html#quotation" class="btn btn-primary btn-with-icon rounded-pill btn-lg">
+                                Demander un devis gratuit<i class="bi bi-arrow-right"  role="img" aria-label="icone flèche"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 col-lg-5 text-center text-md-start">
-                <ul class="list-unstyled">
-                    <li class="mb-1"><a href="" class="text-reset text-primary-hover">documentation</a></li>
-                    <li class="mb-1"><a href="" class="text-reset text-primary-hover">components</a></li>
-                    <li class="mb-1"><a href="" class="text-reset text-primary-hover">blocks</a></li>
-                    <li class="mb-1"><a href="" class="text-reset text-primary-hover">changelog</a></li>
-                    <li><a href="" class="text-reset text-primary-hover">roadmap</a></li>
+        </section>
+        <!-- footer -->
+        <footer class="bg-light bg-gradient p-4" role="contentinfo">
+            <div class="container gap-5 d-flex flex-column flex-sm-row justify-content-between  align-items-center">
+                <a href="./index.html" class="">
+                    <p><b>Gironde débarras</b></p>
+                </a>
+                <ul class="list-unstyled d-flex flex-column flex-lg-row gap-3 justify-content-between  align-items-center ">
+                    <li class="mb-1"><a href="index.html" class="text-reset text-primary-hover" title="Retour à l'accueil">Accueil</a></li>
+                    <li class="mb-1"><a href="who_are_we.htm" class="text-reset text-primary-hover" title="En savoir plus sur Gironde Débarras">Qui sommes-nous ?</a></li>
+                    <li class="mb-1"><a href="faq.html" class="text-reset text-primary-hover" title="Foire aux questions">Questions fréquentes</a></li>
+                    <li class="mb-1"><a href="/site_vitrine/index.html#quotation" class="text-reset text-primary-hover" title="Demander un devis gratuit pour votre débarras">Demander un devis</a></li>
                 </ul>
             </div>
-            <div class="col-md-5 col-lg-4">
-                <div class="grouped-inputs border p-1 rounded-pill">
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control rounded-pill px-3" aria-label="Text input"
-                                   placeholder="Your email">
-                        </div>
-                        <div class="col-auto">
-                            <a href="" class="btn btn-yellow btn-icon rounded-circle"><i class="bi bi-arrow-return-left"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center g-1 g-lg-6 text-muted">
-            <div class="col-md-6 col-lg-5 order-lg-2 text-center text-md-start">
-                <ul class="list-inline small">
-                    <li class="list-inline-item"><a href="" class="text-reset text-primary-hover">facebook</a></li>
-                    <li class="list-inline-item ms-1"><a href="" class="text-reset text-primary-hover">twitter</a></li>
-                    <li class="list-inline-item ms-1"><a href="" class="text-reset text-primary-hover">linkedin</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-4 text-center text-md-end order-lg-3">
-                <span class="small">5th Avenue, New York USA 10255</span>
-            </div>
-            <div class="col-lg-3 order-lg-1 text-center text-md-start">
-                <p class="small">Copyrights © 2021</p>
-            </div>
-        </div>
-    </div>
-</footer>  </div>
-
-<!-- javascript -->
-<script src="./assets/js/vendor.bundle.js"></script>
-<script src="./assets/js/index.bundle.js"></script></body>
-
-
+        </footer>
+    </main>
+</body>
 </html>
