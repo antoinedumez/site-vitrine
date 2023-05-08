@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <meta name="description"
+          content="Gironde Débarras accueil: entreprise spécialisée dans le débarras de locaux et de biens. Demandez un devis gratuit en ligne pour bénéficier d'un service clé en main rapide et efficace. Découvrez comment fonctionne notre service de débarras à travers une vidéo explicative. Comprenez pourquoi il est important de choisir une entreprise qualifiée et expérimentée. Consultez nos chiffres clés et avis clients pour en savoir plus. Contactez-nous dès maintenant pour un débarras réussi">
+    <meta name="robots" content="index, follow">
     <!-- Main CSS-->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" defer/>
     <link rel="stylesheet" href="./assets/css/index.bundle.css" defer/>
@@ -14,14 +16,22 @@
     <script src="./assets/js/vendor.bundle.js" defer></script>
     <script src="./assets/js/index.bundle.js" defer></script>
     <script src="./assets/js/service.js" defer></script>
-    <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/logo/gironde_debarras_logo_01.png" type="image/png">
+    <!-- site map -->
+    <link rel="sitemap" type="application/xml" href="./sitemap.xml">
+    <title>Accueil - Gironde Débarras</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark test bg-gradient py-1" aria-label="Fourth navbar example">
-        <div class="container">
-            <a class="navbar-brand col-4" href="index.html">Accueil</a>
+    <header class="navbar navbar-expand-md navbar-dark test bg-gradient py-1" aria-label="Fourth navbar example">
+        <nav class="container">
+            <a class="navbar-brand col-4"
+               href="index.html"
+               title="Gironde Débarras - Accueil">
+                <b>Gironde Débarras - Accueil</b>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,21 +39,34 @@
             <div class="collapse navbar-collapse  d-md-flex justify-content-md-end align-items-center" id="navbarsExample04">
                 <ul class="navbar-nav gap-md-3 mt-0">
                     <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
+                        <a class="nav-link active"
+                           aria-current="page"
+                           href="faq.html"
+                           title="Foire aux questions">
+                            <b>FAQ</b>
+                        </a>
                     </li>
                     <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" href="who_are_we.htm">qui sommes-nous ?</a>
+                        <a class="nav-link"
+                           href="who_are_we.htm"
+                           title="En savoir plus sur Gironde Débarras">
+                            <b>Qui sommes-nous ?</b>
+                        </a>
                     </li>
                     <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link border border-white rounded" href="#quotation">demander un devis gratuit</a>
+                        <a class="nav-link border border-black rounded bg-white text-black px-1"
+                           href="#quotation"
+                           title="Demander un devis gratuit pour votre débarras">
+                            <b>Demander un devis gratuit</b>
+                        </a>
                     </li>
                 </ul>
 
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!-- content body -->
-    <div class="d-flex flex-column gap-10">
+    <main class="d-flex flex-column gap-10">
         <!-- header with form -->
         <section class="overflow-hidden bg-black" data-aos="fade-in">
             <div class="d-flex flex-column py-20 container foreground min-vh-100" id="quotation">
@@ -60,11 +83,11 @@
                         <div class="d-inline-flex align-items-center mb-0">
                             <span class="fs-2 me-2 lh-1 fw-bold">4.7</span>
                             <ul class="rating text-yellow me-3 fs-5">
-                                <li><i class="bi bi-star-fill"></i></li>
-                                <li><i class="bi bi-star-fill"></i></li>
-                                <li><i class="bi bi-star-fill"></i></li>
-                                <li><i class="bi bi-star-fill"></i></li>
-                                <li><i class="bi bi-star-fill"></i></li>
+                                <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
                             </ul>
                         </div>
                         <small class="d-block text-muted">Basé sur plus de 50 avis.</small>
@@ -74,45 +97,49 @@
                         <div class="card bg-opaque-black">
                             <div class="card-body bg-white">
                                 <form name="contact" method="POST" data-netlify="true" action="index.html" class="row g-2">
-                                    <div class="col-lg-12">
-                                        <div class="form-floating">
-                                            <input type="text" name="name" class="form-control" id="floatingInput-1" placeholder="Your Name" required>
-                                            <label for="floatingInput-1">Nom et prénom</label>
+                                    <fieldset>
+                                        <legend class="visually-hidden">Formulaire de demande de devis</legend>
+                                        <div class="col-lg-12">
+                                            <div class="form-floating">
+                                                <input type="text" name="name" class="form-control" id="floatingInput-1" placeholder="Your Name" required>
+                                                <label for="floatingInput-1">Nom et prénom</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-floating">
-                                            <input type="text" name="place" class="form-control" id="floatingInput-2" placeholder="Lieu" required>
-                                            <label for="floatingInput-2">Lieu</label>
+                                        <div class="col-lg-12">
+                                            <div class="form-floating">
+                                                <input type="text" name="place" class="form-control" id="floatingInput-2" placeholder="Lieu" required>
+                                                <label for="floatingInput-2">Lieu</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-floating">
-                                            <input type="email"  name="email" class="form-control" id="floatingInput-3" placeholder="Adresse email" required>
-                                            <label for="floatingInput-3">Adresse email</label>
+                                        <div class="col-lg-12">
+                                            <div class="form-floating">
+                                                <input type="email"  name="email" class="form-control" id="floatingInput-3" placeholder="Adresse email" required>
+                                                <label for="floatingInput-3">Adresse email</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-floating">
-                                            <input type="tel" name="phone" class="form-control" id="floatingInput-4" placeholder="Numéro de téléphone" required>
-                                            <label for="floatingInput-4">Numéro de téléphone</label>
+                                        <div class="col-lg-12">
+                                            <div class="form-floating">
+                                                <input type="tel" name="phone" class="form-control" id="floatingInput-4" placeholder="Numéro de téléphone" required>
+                                                <label for="floatingInput-4">Numéro de téléphone</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-floating">
-                                            <textarea type="text" name="message" class="form-control" placeholder="Message" id="floatingTextarea2" style="height: 100px" required></textarea>
-                                            <label for="floatingTextarea2">Message</label>
+                                        <div class="col-md-12">
+                                            <div class="form-floating">
+                                                <textarea type="text" name="message" class="form-control" placeholder="Message" id="floatingTextarea2" style="height: 100px" required></textarea>
+                                                <label for="floatingTextarea2">Message</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="d-grid ">
-                                        <button type="submit" class="btn btn-primary bg-gradient btn-lg">
+                                        <div class="d-grid ">
+                                        <button type="submit" class="btn btn-primary bg-gradient btn-lg py-1 rounded">
                                             Recevoir mon devis gratuit <br>💌
                                         </button>
                                     </div>
+                                    </fieldset>
                                 </form>
                                 <div  id="phone_number"
-                                      class="btn btn-primary bg-gradient btn-lg my-5 col-12"
-                                      onclick="showPhoneNumber()">
+                                      class="btn btn-primary bg-gradient btn-lg my-5 col-12 py-1 rounded"
+                                      onclick="showPhoneNumber()"
+                                      aria-label="Afficher le numéro de téléphone">
                                     Afficher le numéro <br> 📞
                                 </div>
                             </div>
@@ -120,14 +147,14 @@
                     </div>
                 </div>
             </div>
-            <!-- TODO: CHANGE BG IMAGES HERE -->
             <figure
+                    aria-label="Image des véhicules de la société"
                     class="background background-overlay"
                     style="background-image: url('./assets/images/camion.png')"
                     data-top-top="transform: scale(1);"
                     data-top-bottom="transform: scale(1.1);"></figure>
         </section>
-        <!-- accodion DONE -->
+        <!-- accodion -->
         <section class="py-15 py-xl-20">
             <div class="container">
                 <div class="row justify-content-center mb-8">
@@ -147,7 +174,7 @@
                                 <h2 class="accordion-header" id="heading-1-1">
                                     <button class="accordion-button fs-lg collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
-                                        <i class="bi bi-1-circle text-yellow fs-5 me-2"></i> Prise de contact
+                                        <i class="bi bi-1-circle text-yellow fs-5 me-2" role="img" aria-label="Etape 1"></i> Prise de contact
                                     </button>
                                 </h2>
                                 <div id="collapse-1-1" class="accordion-collapse collapse" aria-labelledby="heading-1-1"
@@ -164,7 +191,7 @@
                                 <h2 class="accordion-header" id="heading-1-2">
                                     <button class="accordion-button fs-lg collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
-                                        <i class="bi bi-2-circle text-yellow fs-5 me-2"></i>
+                                        <i class="bi bi-2-circle text-yellow fs-5 me-2" role="img" aria-label="Etape 2"></i>
                                         Inventaire et valorisations
                                     </button>
                                 </h2>
@@ -182,7 +209,7 @@
                                 <h2 class="accordion-header" id="heading-1-3">
                                     <button class="accordion-button fs-lg collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
-                                        <i class="bi bi-3-circle text-yellow fs-5 me-2"></i> Réception du devis
+                                        <i class="bi bi-3-circle text-yellow fs-5 me-2" role="img" aria-label="Etape 3" ></i> Réception du devis
                                     </button>
                                 </h2>
                                 <div id="collapse-1-3" class="accordion-collapse collapse" aria-labelledby="heading-1-3"
@@ -199,7 +226,7 @@
                                 <h2 class="accordion-header" id="heading-1-4">
                                     <button class="accordion-button fs-lg collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapse-1-4" aria-expanded="false" aria-controls="collapse-1-4">
-                                        <i class="bi bi-4-circle text-yellow fs-5 me-2"></i> Acceptation du devis
+                                        <i class="bi bi-4-circle text-yellow fs-5 me-2" role="img" aria-label="Etape 4"></i> Acceptation du devis
                                     </button>
                                 </h2>
                                 <div id="collapse-1-4" class="accordion-collapse collapse" aria-labelledby="heading-1-4"
@@ -216,7 +243,7 @@
                                 <h2 class="accordion-header" id="heading-1-5">
                                     <button class="accordion-button fs-lg collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapse-1-5" aria-expanded="false" aria-controls="collapse-1-5">
-                                        <i class="bi bi-5-circle text-yellow fs-5 me-2"></i> Début du débarras
+                                        <i class="bi bi-5-circle text-yellow fs-5 me-2" role="img" aria-label="Etape 5"></i> Début du débarras
                                     </button>
                                 </h2>
                                 <div id="collapse-1-5" class="accordion-collapse collapse" aria-labelledby="heading-1-5"
@@ -233,7 +260,7 @@
                                 <h2 class="accordion-header" id="heading-1-6">
                                     <button class="accordion-button fs-lg collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapse-1-6" aria-expanded="false" aria-controls="collapse-1-6">
-                                        <i class="bi bi-6-circle text-yellow fs-5 me-2"></i> Déroulé
+                                        <i class="bi bi-6-circle text-yellow fs-5 me-2" role="img" aria-label="Etape 6"></i> Déroulé
                                     </button>
                                 </h2>
                                 <div id="collapse-1-6" class="accordion-collapse collapse" aria-labelledby="heading-1-6"
@@ -250,7 +277,7 @@
                                 <h2 class="accordion-header" id="heading-1-7">
                                     <button class="accordion-button fs-lg collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapse-1-7" aria-expanded="false" aria-controls="collapse-1-7">
-                                        <i class="bi bi-7-circle text-yellow fs-5 me-2"></i> Evacuation
+                                        <i class="bi bi-7-circle text-yellow fs-5 me-2" role="img" aria-label="Etape 7"></i> Evacuation
                                     </button>
                                 </h2>
                                 <div id="collapse-1-7" class="accordion-collapse collapse" aria-labelledby="heading-1-7"
@@ -267,7 +294,7 @@
                                 <h2 class="accordion-header" id="heading-1-8">
                                     <button class="accordion-button fs-lg collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapse-1-8" aria-expanded="false" aria-controls="collapse-1-8">
-                                        <i class="bi bi-8-circle text-yellow fs-5 me-2"></i> Finalisation
+                                        <i class="bi bi-8-circle text-yellow fs-5 me-2" role="img" aria-label="Etape 8"></i> Finalisation
                                     </button>
                                 </h2>
                                 <div id="collapse-1-8" class="accordion-collapse collapse" aria-labelledby="heading-1-8"
@@ -298,7 +325,7 @@
                             Nous sommes conscients que les travaux de débarras peuvent être stressants et que les clients ont besoin d’une tranquillité d’esprit absolue quant aux coûts et au déroulement du travail.
                         </p>
                         <a href="#quotation" class="btn btn-primary btn-with-icon rounded-pill btn-lg">Demander un devis gratuit <i
-                                class="bi bi-arrow-right"></i></a>
+                                class="bi bi-arrow-right" role="img" aria-label="Icône de flèche"></i></a>
 
                     </div>
                 </div>
@@ -308,21 +335,24 @@
                     <div class="col-lg-6 overflow-hidden position-relative" data-aos="fade-in">
                         <figure
                                 class="media media-video"
-                                data-bp='{"ytSrc": "RDRspwAXDQI"}'>
+                                data-bp='{"ytSrc": "RDRspwAXDQI"}'
+                                aria-label="Vidéo présentant notre entreprise de débarras">
                             <span style="background-image: url('./assets/images/DEBARRAS.png')"></span>
                         </figure>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- text description DONE -->
+        <!-- text description -->
         <section class="">
-            <div class="container">
-                <blockquote class="blockquote my-5">
-                    <p class="fs-4  fw-bold mb-0 lh-sm">
-                        Pourquoi il est essentiel de choisir une entreprise de débarras qualifiée et expérimentée ?
-                    </p>
-                </blockquote>
+            <article class="container">
+                <header>
+                    <blockquote class="blockquote my-5">
+                        <p class="fs-4  fw-bold mb-0 lh-sm">
+                            Pourquoi il est essentiel de choisir une entreprise de débarras qualifiée et expérimentée ?
+                        </p>
+                    </blockquote>
+                </header>
                 <p class="fs-lg text-secondary">
                     Obtenir un devis de débarras de maison est la première étape pour <b>s’assurer d’un travail de qualité et éviter les mauvaises surprises.</b> Si vous avez des objets encombrants ou des meubles dont vous souhaitez vous débarrasser, il est important de faire appel à une entreprise de débarras professionnelle comme Gironde Débarras pour garantir un travail <b>efficace et sécurisé.</b>
                 </p>
@@ -343,10 +373,10 @@
                     Vous pouvez ainsi vous assurer que le travail sera réalisé en toute sécurité et à un prix compétitif.
                 </p>
 
-            </div>
+            </article>
         </section>
         <!-- features -->
-        <section class="">
+        <section id="features">
             <div class="container">
                 <div class="row justify-content-center mb-6">
                     <div class="col-lg-8 text-center">
@@ -357,28 +387,28 @@
                     <div class="col-lg-10" data-aos="fade-up">
                         <div class="row separated">
                             <div class="col-lg-7 p-5">
-                                <div class="d-flex align-items-end">
+                                <figure class="d-flex align-items-end">
                                     <h5 class="fs-1 mb-0 me-2 lh-1 text-primary fw-bold">85%</h5>
-                                    <p class="text-secondary">De seconde vie ou de recyclage</p>
-                                </div>
+                                    <figcaption class="text-secondary">De seconde vie ou de recyclage</figcaption>
+                                </figure>
                             </div>
                             <div class="col-lg-5 p-5">
-                                <div class="d-flex align-items-end">
+                                <figure class="d-flex align-items-end">
                                     <h5 class="fs-1 mb-0 me-2 lh-1 text-primary fw-bold">+15</h5>
-                                    <p class="text-secondary">Partenariats avec des professionnels</p>
-                                </div>
+                                    <figcaption class="text-secondary">Partenariats avec des professionnels</figcaption>
+                                </figure>
                             </div>
                             <div class="col-lg-5 p-5">
-                                <div class="d-flex align-items-end">
+                                <figure class="d-flex align-items-end">
                                     <h5 class="fs-1 mb-0 me-2 lh-1 text-primary fw-bold">+950</h5>
-                                    <p class="text-secondary">Projets terminés depuis plus de 10 ans</p>
-                                </div>
+                                    <figcaption class="text-secondary">Projets terminés depuis plus de 10 ans</figcaption>
+                                </figure>
                             </div>
                             <div class="col-lg-7 p-5">
-                                <div class="d-flex align-items-end">
+                                <figure class="d-flex align-items-end">
                                     <h5 class="fs-1 mb-0 me-2 lh-1 text-primary fw-bold">99.9%</h5>
-                                    <p class="text-secondary">De nos clients sont satisfaits !!</p>
-                                </div>
+                                    <figcaption class="text-secondary">De nos clients sont satisfaits !!</figcaption>
+                                </figure>
                             </div>
                         </div>
                     </div>
@@ -392,7 +422,7 @@
                     <div class="col-lg-10">
                         <div class="text-center pb-4">
                             <a href="#quotation" class="btn btn-primary btn-with-icon rounded-pill btn-lg">
-                                Demander un devis gratuit<i class="bi bi-arrow-right"></i>
+                                Demander un devis gratuit<i class="bi bi-arrow-right"  role="img" aria-label="icone flèche"></i>
                             </a>
                         </div>
                         <div class="row justify-content-center mb-5">
@@ -414,18 +444,18 @@
                                                     <span class="text-muted">sur 5</span>
                                                 </div>
                                                 <ul class="rating text-yellow">
-                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                    <li><i class="bi bi-star-fill"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
                                                 </ul>
                                             </div>
                                             <div class="col-md-8">
-                                                <p class="mb-2 lead text-secondary">
+                                                <blockquote class="mb-2 lead text-secondary">
                                                     “J'ai été ravi du travail réalisé par Gironde Débarras suite suite à une succession familial. Leur professionnalisme m'a rassuré dès le début et le résultat correspondait parfaitement à mes attentes. Je recommande vivement leurs services”
-                                                </p>
-                                                <span class="eyebrow">Murielle</span>
+                                                </blockquote>
+                                                <cite class="eyebrow">Murielle</cite>
                                             </div>
                                         </div>
                                     </li>
@@ -437,18 +467,18 @@
                                                     <span class="text-muted">sur 5</span>
                                                 </div>
                                                 <ul class="rating text-yellow">
-                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                    <li><i class="bi bi-star-fill"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
+                                                    <li><i class="bi bi-star-fill" role="img" aria-label="icone étoile"></i></li>
                                                 </ul>
                                             </div>
                                             <div class="col-md-8">
-                                                <p class="mb-2 lead text-secondary">
+                                                <blockquote class="mb-2 lead text-secondary">
                                                     “Les Artisans Débarrasseurs ont été incroyablement professionnels lors de mon débarras. Ils ont travaillé rapidement et efficacement tout en étant très respectueux de mes biens. Le résultat final correspondait parfaitement au devis et à mes attentes. Aucune mauvaise surprise par rapport au devis, je les recommande chaudement !”
-                                                </p>
-                                                <span class="eyebrow">Michael</span>
+                                                </blockquote>
+                                                <cite class="eyebrow">Michael</cite>
                                             </div>
                                         </div>
                                     </li>
@@ -460,22 +490,19 @@
             </div>
         </section>
         <!-- footer -->
-        <footer class="bg-light bg-gradient p-4">
+        <footer class="bg-light bg-gradient p-4" role="contentinfo">
             <div class="container gap-5 d-flex flex-column flex-sm-row justify-content-between  align-items-center">
                 <a href="./index.html" class="">
-                    <!-- TODO: change image -->
-                    <img src="./assets/images/logo/logo-dark.svg" alt="Logo">
+                    <p><b>Gironde débarras</b></p>
                 </a>
                 <ul class="list-unstyled d-flex flex-column flex-lg-row gap-3 justify-content-between  align-items-center ">
-                    <li class="mb-1"><a href="index.html" class="text-reset text-primary-hover">Accueil</a></li>
-                    <li class="mb-1"><a href="who_are_we.htm" class="text-reset text-primary-hover">Qui sommes-nous ?</a></li>
-                    <li class="mb-1"><a href="faq.html" class="text-reset text-primary-hover">Questions fréquentes</a></li>
-                    <li class="mb-1"><a href="index.html" class="text-reset text-primary-hover">Demander un devis</a></li>
+                    <li class="mb-1"><a href="index.html" class="text-reset text-primary-hover" title="Retour à l'accueil">Accueil</a></li>
+                    <li class="mb-1"><a href="who_are_we.htm" class="text-reset text-primary-hover" title="En savoir plus sur Gironde Débarras">Qui sommes-nous ?</a></li>
+                    <li class="mb-1"><a href="faq.html" class="text-reset text-primary-hover" title="Foire aux questions">Questions fréquentes</a></li>
+                    <li class="mb-1"><a href="#quotation" class="text-reset text-primary-hover" title="Demander un devis gratuit pour votre débarras">Demander un devis</a></li>
                 </ul>
             </div>
         </footer>
-    </div>
-    </div>
-
+    </main>
 </body>
 </html>
