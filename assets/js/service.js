@@ -12,7 +12,7 @@ function showPhoneNumber() {
 
 function forceRefresh(element) {
     console.log('coucou');
-        window.location.reload();
+        // window.location.reload();
     window.location.href = "index.html/#quotation"
     // element.preventDefault();
     // const targetUrl = element.target.getAttribute('href');
